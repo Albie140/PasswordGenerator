@@ -1,7 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-//Arrays//
+//Arrays for possible password characters//
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 var specialCharacter = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", "=", "[", "]", "{", "}", "~"]
@@ -14,7 +14,7 @@ function writePassword() {
 
     passwordText.value = password;
 }
-
+//Prompt user with question about how long desired password should be & store user input//
 function generatePassword() {
     var howManyNumbers = prompt("How many characters would you like your password to be?");
 
@@ -26,7 +26,8 @@ function generatePassword() {
         alert("Can't be more than 128 characters");
 
     }
-
+   
+// Confirm type of characters user would like in password, user must choose at least 1//
 
     var chooselowercase = confirm("Would you like lowercase letters in your password?");
     var chooseuppercase = confirm("Would you like uppercase letters in your password?");
@@ -38,7 +39,7 @@ function generatePassword() {
 
         alert("Must choose at least 1 character type")
     }
-
+//Concat arrays for possible password combinations//
     var userArray = []
     if (chooselowercase) {
         userArray = userArray.concat(lowerCase)
@@ -59,7 +60,7 @@ function generatePassword() {
         userArray = userArray.concat(Numeric)
         console.log(userArray)
     }
-
+//Display password with all chosen criteria//
     var password = "";
     for (i = 0; i < howManyNumbers; i++) {
         password += userArray[Math.floor(Math.random() * userArray.length)];

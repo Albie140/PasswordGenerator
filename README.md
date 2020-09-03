@@ -1,2 +1,2 @@
 # PasswordGenerator
-For this assignment, I created a Password Generator. After clicking the generate password button and following some prompts, a random password is generated. 
+For this assignment, I created a secure Password Generator. The password must be between 8 and 128 characters long and may contain upper and lowercase letters, special characters, and numbers. The length and character type are chosen by the user. By clicking the generate password button and following some prompts, a random, secure password is generated. 
