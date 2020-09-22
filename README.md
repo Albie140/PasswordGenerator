@@ -7,8 +7,9 @@ Deployed Application: https://albie140.github.io/PasswordGenerator/
 ![Password Generator Image](pwg1.png)
 ![Password Generator Image](pwg2.png)
 
-Technologies Used:
+# Technologies Used:
 HTML, CSS, JavaScript
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+# Questions:
+Email: alberte.laventure@gmail.com
